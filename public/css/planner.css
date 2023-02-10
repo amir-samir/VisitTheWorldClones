@@ -1,0 +1,240 @@
+.duration-type-planner-container {
+  width: 100%;
+  height: 100%;
+  max-height: 80%;
+  max-width: 80%;
+  background: #E8ECF0;
+  box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+#duration-type-planner-container {
+    width: 100%;
+    height: 100%;
+    max-height: 80%;
+    max-width: 80%;
+    background: #E8ECF0;
+    box-shadow: 0px 30px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
+  
+  form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .input-group, .btn , .dropdown-menu{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+  }
+  
+  .check-in-out,
+  .other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  input {
+    width: 100%;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 5px;
+    border: none;
+    padding: 20px;
+    outline: none;
+    font-size: 21px;
+  }
+  
+  label {
+    font-size: 17px;
+    align-items: center;
+    padding: 5px 0;
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .properties {
+    background-color: #FF455B;
+    max-width: 60%;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: -10px;
+    text-align: center;
+    font-size: 22px;
+  }
+
+ 
+
+  ul {
+	list-style: none;
+}
+
+
+.activity{
+    width: 65%;
+    height: auto;
+    /* display: flex; */
+    text-align: center;
+    border-radius: 15px;
+    margin: 0px 15px;
+    margin-left: 7rem;
+    background-color: rgba(219, 226, 219, 0.9);
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.placeImage{
+    width: 100%;
+    height: 45%;
+    border-radius: 15px;
+}
+
+.place{
+    margin: 10px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Fredoka', sans-serif;
+    color: rgba(0,0,0,0.8);
+}
+
+.travelFeatures{
+    margin: 0;
+    padding: 0;
+    color: rgba(0,0,0,0.5);   
+}
+.travelFeaturesItem{
+      margin: 0;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 1.1rem;
+      /* line-height: 1.5; */
+      padding: 5px;
+      border-top: 1px solid #e1f1ff;
+      border-radius: 5px;
+}
+.travelFeaturesItem:last-child{
+    border-bottom: 1px solid #e1f1ff;
+    border-radius: 15px;
+
+}
+.activityPrice{
+    color: rgba(0,0,0,0.7);
+    margin: 5px;
+	display: block;
+	font-weight: 600;
+	font-size: 1.4rem;
+}
+
+.button{
+    border: 2px solid #008000;
+    font-weight: 600;
+    margin: 10px;
+	border-radius: 10px;
+	color: #006400;
+	display: inline-block;
+	padding: 5px 15px;
+	text-decoration: none;
+	transition: all 300ms;
+}
+.button:hover, .button:focus{
+	background-color: #228B22;
+    color: #fff;
+}
+
+@media (max-width:810px) {
+	.container{
+		flex-direction: column;
+
+	}
+    .travelPlans{
+        width: 35%;
+        margin: 10px 0;
+    }
+    .travelPlans:hover{
+        width: 40%;
+        transition: 0.5s;
+        opacity: 1;
+    }
+	
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    font-size: 3rem;
+    color: purple;
+}
+
+
+#tripTypeTitle{
+  margin-top: 1rem;
+  width: 100%;
+  font-size: large;
+  border: none;
+}
+
+#inputGroupSelect01{
+  width: 100%;
+  font-size: small;
+}
+
+
+#calendar {
+  width: 800px;
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+td div {
+  background-color: #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+.event-cell {
+  background-color: #f1c40f;
+}
+
+.removeButton{
+border: 2px solid #008000;
+font-weight: 600;
+margin: 10px;
+border-radius: 10px;
+color: #006400;
+display: inline-block;
+width: 80%;
+padding: 5px 15px;
+text-decoration: none;
+transition: all 300ms;
+}
+

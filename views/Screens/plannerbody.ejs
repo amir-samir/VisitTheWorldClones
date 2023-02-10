@@ -1,0 +1,128 @@
+<div class="container" id="duration-type-planner-container">
+    <form action="/planit">
+      <h1>Plan Your Own Trip</h1>
+      <!-- <div class="input-group" id="dropdownMenuTripType">
+        <label for="location">Location</label>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuTripType">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        <input type="text" id="location">
+      </div> -->
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <label class="input-group-text" for="inputGroupSelect01" id="tripTypeTitle"> Choose the type of your Trip</label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01">
+          <option selected>Choose...</option>
+          <option value="1">Family Trip</option>
+          <option value="2">Family With Children Trip</option>
+          <option value="3">Young People Trip</option>
+          <option value="4">Honeymoon Trip</option>
+          <option value="5">Romantic Trip</option>
+
+        </select>
+      </div>
+      <div class="check-in-out">
+        <div class="input-group">
+          <label for="trip-start">Start</label>
+          <input type="text" id="trip-start" autocomplete="off" class="date-picker">
+        </div>
+        <div class="input-group">
+          <label for="trip-end">End</label>
+          <input type="text" id="trip-end" autocomplete="off" class="date-picker">
+        </div>
+      </div>
+
+      
+    </form>
+  </div>
+
+  <div class="tryDynamic" id="previews">
+
+   
+   
+  </div>
+
+  <table id="calendar">
+    <tr>
+      <th></th>
+      <th>Monday</th>
+      <th>Tuesday</th>
+      <th>Wednesday</th>
+      <th>Thursday</th>
+      <th>Friday</th>
+      <th>Saturday</th>
+      <th>Sunday</th>
+    </tr>
+</table>
+
+<button id="addEvent">Add Event</button>
+
+  
+  
+
+  <!-- <div class="trycards">
+    <div class="tr-card">
+        <div class="tr-badge">
+          <h4 style="color:black;">14 Nov
+            </h4>
+          </div>  
+          <img src="https://static1.squarespace.com/static/5e60d922fc16cf04dcb78f96/t/5ee8f0f890046c51c8d8e959/1592324379773/Belgium+Trip.jpg?format=1500w" alt="Belgium"/>
+          <div class="trinfo">
+            <div class="tripn">Beautiful Belgium</div>
+            <div class="container" id="cardInfoCon">
+                <div class="row" id="Cardlocation">
+                    Isar
+                </div>
+                <div class="row">
+                   <p>2-6 Hours</p>
+                </div>
+                <div class="row">
+                    <p>open the Gallery</p>
+                </div>
+                <div class="row">
+                    <p>Free</p>
+                </div>
+                <div class="row">
+                    <p>Blogger</p>                    </div>
+                <div class="row">
+                    <p>Opening Hours</p>
+                </div>
+                <p>A quick burst into the narrow medieval streets of the city for its charming canals through the confounding earliest gothic architecture.</p>
+            <button> <a href="https://thebucketlisttrips.com/corona">Read More</a></button>
+            <button> <a href="https://thebucketlisttrips.com/corona">Add Activity</a></button>
+            </div>
+          </div>
+        </div>
+  </div> -->
+
+  
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+<!-- Bootstrap date range picker JS -->
+<script type="text/javascript" src="//cdn.jsdelivr.net/jquery/1/jquery.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<!-- linking the swiper-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!--linking ajax-->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
