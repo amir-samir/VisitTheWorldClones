@@ -8,6 +8,12 @@
    .tripplaner-contain__button {
     width: 100%;
 }
+.carousel-caption h4 {
+    font-size: 18px;
+  }
+  .carousel-caption h1 {
+    font-size: 20px;
+  }
 
    }
 /* Extra small devices (phones, 600px and down) */

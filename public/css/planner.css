@@ -37,7 +37,7 @@
     justify-content: space-between;
   }
   
-  .input-group, .btn , .dropdown-menu{
+  .input-group , .dropdown-menu{
     display: flex;
     width: 100%;
     flex-direction: column;

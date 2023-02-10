@@ -1,12 +1,12 @@
 
 
-   <div class="container-fluid">
+   <div>
         <!-- Carousel Start -->
         <div class="container-fluid p-0">
           <div id="header-carousel" class="carousel slide" data-ride="carousel">
               <div class="carousel-inner">
                   <div class="carousel-item active">
-                      <img class="w-100" src="public/assets/blogs6.jpg" alt="Image">
+                      <img class="w-100" src="/assets/blogs5.jpg" alt="Image">
                       <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                           <div class="p-3" style="max-width: 900px;">
                               <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>
@@ -16,7 +16,7 @@
                       </div>
                   </div>
                   <div class="carousel-item">
-                      <img class="w-100" src="public/assets/cablecar.jpg" alt="Image">
+                      <img class="w-100" src="/assets/cablecar.jpg" alt="Image">
                       <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                           <div class="p-3" style="max-width: 900px;">
                               <h4 class="text-white text-uppercase mb-md-3">Tours & Travel</h4>
@@ -27,92 +27,48 @@
                   </div>
               </div>
               <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-                  <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                  <div class="btn btn-dark d-flex align-items-center" style="width: 45px; height: 45px;">
                       <span class="carousel-control-prev-icon mb-n2"></span>
                   </div>
               </a>
               <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                  <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                  <div class="btn btn-dark d-flex align-items-center" style="width: 45px; height: 45px;">
                       <span class="carousel-control-next-icon mb-n2"></span>
                   </div>
               </a>
           </div>
       </div>
       <!-- Carousel End -->
+          
+  <!-- Best Tours Cards Start -->
+  <section id="bestTours"  class="container-fluid">
+    <h1 class="title">Best Tours</h2>
+   <div class="row">
+    <% tours.forEach(function(tour) { %>
+      <div class="col-xl-4 col-md-6">
+        <div class="karte rgb">
+            <div class="card-image">
+          <img src='<%= tour.image %>' />
+        </div>
+            <div class="card-text">
+              <span class="blogger"><%= tour.blogger %></span>
+              <h2><%= tour.name %></h2>
+              <p><%= tour.description %></p>
+            </div>
+        </div>
+    </div>
+    <% }); %>
+    </div>
+  </section>
+
+  <!-- Best Tours Cards End -->
+  <section id="par">
+
+  </section>
+
    <div class=" besbes">
    <div class="row">
-<div class="col-md-8">
-<div class="row">
 
-    <div class="col-xl-4 col-md-6">
-        <div class="karte rgb">
-            <div class="card-image"  style="background-size: cover"></div>
-            <div class="card-text">
-              <span class="blogger">Robert Jona</span>
-              <h2>Thailand</h2>
-              <p>Lorem ipsum dolor sit demoise amet consectetur, Ducimusele, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-4 col-md-6">
-        <div class="karte rgb">
-          <div class="card-image card2"></div>
-          <div class="card-text card2">
-            <span class="blogger">Amir Azim</span>
-            <h2>Tel Aviv</h2>
-            <p>Adipisicing elit. Ducimus, repudiandae corrupti tialeno des ameto temporibus omnis provident illum maxime quod. Lorem ipsum dolor</p>
-          </div>
-        </div>
-    </div>
-
-    <div class="col-xl-4 col-md-6">
-        <div class="karte rgb">
-            <div class="card-image card3"></div>
-            <div class="card-text card3">
-              <span class="blogger">Mohammed habib</span>
-              <h2>Turkey</h2>
-              <p>Repudiandae repudiandae de corrupti amet temporibus omnis si provident illum maxime. Ducimus, lorem ipsum dolor adipisicing elit</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-xl-4 col-md-6">
-        <div class="karte rgb">
-          <div class="card-image card4"></div>
-          <div class="card-text card4">
-            <span class="blogger">Bill Down</span>
-            <h2>USA</h2>
-            <p>Adipisicing elit. Ducimus, repudiandae corrupti tialeno des ameto temporibus omnis provident illum maxime quod. Lorem ipsum dolor</p>
-          </div>
-        </div>
-     </div> 
-
-     <div class="col-xl-4 col-md-6">
-        <div class="karte rgb">
-              <div class="card-image card5"></div>
-              <div class="card-text card5">
-                <span class="blogger">Bro jimm</span>
-                <h2>Italy</h2>
-                <p>Adipisicing elit. Ducimus, repudiandae corrupti tialeno des ameto temporibus omnis provident illum maxime quod. Lorem ipsum dolor</p>
-              </div>
-         </div>
-   </div>
-  
-   <div class="col-xl-4 col-md-6">
-    <div class="karte rgb">
-              <div class="card-image card6"></div>
-              <div class="card-text card6">
-                <span class="blogger">Dom william</span>
-                <h2>Alps</h2>
-                <p>Adipisicing elit. Ducimus, repudiandae corrupti tialeno des ameto temporibus omnis provident illum maxime quod. Lorem ipsum dolor</p>
-              </div>
-            </div>
-    </div>
-
- 
-</div>
-</div>
 <div class="col-md-4">
     <div class="besttours" id="besttours" style="height: 500px;">
 
@@ -155,13 +111,13 @@
    </div>
 
    <div class="col-4">
-    <div class="book-contain">
+    <!-- <div class="book-contain">
         <div class="book-cover">
             <figure class="book-front"></figure>
             <figure class="book-back"></figure>
         </div>
     
-    </div>
+    </div> -->
 
 
    </div>
