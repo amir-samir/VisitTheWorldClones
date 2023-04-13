@@ -21,7 +21,7 @@
     "minify-js1" : "uglifyjs public/dist/main.js --compress -o public/dist/main.js",
     "minify-js2" : "uglifyjs public/dist/global.js --compress -o public/dist/global.js",
     "minify-js3" : "uglifyjs public/dist/planner.js --compress -o public/dist/planner.js",
-    "build" : "npm run minify-html1 && npm run minify-html2 && npm run minify-html3 && npm run optimize-css1 && npm run optimize-css2 && npm run optimize-css3 && npm run optimize-css4 && npm run optimize-css5 && npm run transpile-js1 && npm run transpile-js2 && npm run transpile-js3 && npm run minify-js1 && npm run minify-js2 && npm run minify-js3"
+    "build" : "npm run optimize-css1 && npm run optimize-css2 && npm run optimize-css3 && npm run optimize-css4 && npm run optimize-css5 && npm run transpile-js1 && npm run transpile-js2 && npm run transpile-js3 && npm run minify-js1 && npm run minify-js2 && npm run minify-js3"
     
   },
   "author": "amir azim",
