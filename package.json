@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "travelApp",
   "main": "server.js",
+  "proxy": "https://visittheworld.onrender.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server.js"
@@ -32,6 +33,7 @@
     "passport-local-mongoose-email": "^0.1.4"
   },
   "devDependencies": {
-    "browserify": "^17.0.0"
+    "browserify": "^17.0.0",
+    "webpack-cli": "^5.0.1"
   }
 }
