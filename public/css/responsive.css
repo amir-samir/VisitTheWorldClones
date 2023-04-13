@@ -1,4 +1,21 @@
   @media screen and (max-width: 576px) {
+    .hidden-sm, .hidden-xs{
+        display: none!important;
+    }
+    .card-flyer{
+        width: 80%;
+    }
+    .swiper-slide{
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after{
+        font-size: 1.4rem!important;
+    }
+    .selected_activity{
+        min-height: 200px!important;
+    }
         .tripplaner-contain__content {
             padding: 0;
        }
@@ -34,6 +51,10 @@
 }
 }
 @media screen and (max-width: 768px) {
+    .stories-wrapper .c-preview{
+        width: 45%;
+        margin: 0.5rem;
+    }
     .tripplaner-contain {
         min-height: 500px;
         height: auto;
@@ -75,6 +96,12 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+    .selected_activity{
+        min-height: 500px!important;
+    }
+    /* .event-container{
+        margin: 5rem;
+    } */
     .navbar-expand-custom {
 	    -ms-flex-flow: row nowrap;
 	    flex-flow: row nowrap;

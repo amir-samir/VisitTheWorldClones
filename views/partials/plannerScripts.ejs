@@ -1,0 +1,43 @@
+<script src="/js/planner.js"></script>
+
+<!-- Link Script for Google Maps -->
+<script async="false"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA5vy05rvVmaZO1zhSO2vMS_0gYTqR9jVs&callback=initMap"></script>
+<script>
+    var x, y;
+    var angleRangeY = 40;
+    var angleRangeX = 40;
+    var offsetY = 0;
+    var offsetX = 30; //30;
+
+    UpdateDom(offsetX, offsetY);
+
+    // $("#body").mousemove(function(event) {
+
+    //   var bodyW = $("#body").width();
+    //   var bodyH = $("#body").height();
+
+    //   var mouseX = event.pageX
+    //   var mouseY = event.pageY;
+
+    //   y = -(((angleRangeX / 2 * ((mouseX / bodyW * 30) * 2)) / 100) - angleRangeX / 2) + offsetY;
+    //   x = ((angleRangeY / 2 * ((mouseY / bodyH * 10) * 2)) / 100) - angleRangeY / 2 + offsetX;
+
+    //   $("#txt").html("X:" + mouseX + " - " +
+    //     Math.round((mouseX / bodyW * 100)) + "%" +
+    //     '<br>' +
+    //     "Y:" + mouseY + " - " +
+    //     Math.round((mouseY / bodyH * 100)) + "%");
+
+    // });
+    // setInterval(function() {
+    //   UpdateDom(x, y)
+    // }, 100);
+
+    function UpdateDom(x, y) {
+        $("#plate").css('transform', 'rotateY(' + y + 'deg)' + 'rotateX(' + x + 'deg)' + 'translateZ(0px)');
+        $("#plate2").css('transform', 'rotateY(' + y + 'deg)' + 'rotateX(' + x + 'deg)' + 'translateZ(0px)');
+        $(".pin").css('transform', 'translateZ(24px)' + 'rotateX(' + (-x - 15) + 'deg)' + 'rotateY(' + (-y) + 'deg)');
+
+    };
+</script>

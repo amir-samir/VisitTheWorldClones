@@ -7,7 +7,7 @@ const activitySchema = new mongoose.Schema({
     image: String,
     place: String,
     duration: String,
-    gallerylink: String,
+    city: String,
     opening: String,
     blogger: String,
     location: String,

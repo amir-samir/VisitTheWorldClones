@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include("partials/head") %>
+        <title>
+            <%= id %> | Visit The World
+        </title>
+        <style>
+            .flexDiv {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+            }
+
+            .header_label {
+                font-size: 1rem;
+                margin-right: 1rem;
+            }
+
+            .gridImage {
+                /* background: #fff; */
+                border-radius: 1rem;
+                width: 100%;
+                aspect-ratio: 1/1;
+            }
+
+            .blogger {
+                background: #fff;
+                box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+                border-radius: 1rem;
+                padding: 1rem;
+                margin: 1rem 0;
+            }
+
+            .avatar {
+                border: 1px solid;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: 0.8rem 0 1rem;
+            }
+
+            .callNow {
+                cursor: pointer;
+                width: 100%;
+                border-radius: 1rem;
+                background: var(--primary-blue);
+                padding: 0.5rem 0;
+                color: #fff;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        </style>
+</head>
+
+<body>
+    <!-- <div class="splash">
+  <div class="splash_overlay"></div>
+  <div class="splash_loader">
+    <lottie-player src="/assets/loaders/loading.json"  background="transparent"  speed="1"   loop  autoplay></lottie-player>
+  </div>
+    <img src="/assets/earth.gif" />
+    <div class="splash_text">
+      <h2>Visit The World</h2>
+      <h2>Visit The World</h2>
+    </div>
+  </div> -->
+    <header>
+        <%- include("partials/navbar")%>
+    </header>
+    <main>
+        <div class="container-fluid p-5">
+            <h1 class="my-3">Tour - <span>
+                    <%= id %>
+                </span></h1>
+            <!-- Start Header Info -->
+            <div class="row my-3">
+                <div class="col-lg-8 col-md-12 flexDiv justify-content-start">
+                    <span class="header_label"><i class="fa fa-clock mr-2"></i>4 days - 3 night </span>
+                    <span class="header_label"><i class="fa fa-location-dot mr-2"></i>Bali Indonesia </span>
+                    <span class="header_label"><i class="fa fa-tags mr-2"></i>Adventure, Culture/Nature, Popular </span>
+                </div>
+                <div class="col-lg-4 col-md-12 flexDiv justify-content-end">
+                    <span class="header_label"><i class="fa fa-share-nodes mr-2"></i>Share </span>
+                    <span class="header_label"><i class="fa fa-heart mr-2"></i>Save </span>
+                </div>
+            </div>
+            <!-- End Header Info -->
+
+            <div class="row">
+
+                <!-- Start Image Grid -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 flexDiv">
+                            <img src="/assets/bestTours/alpspackage.jpg" alt="Nice Forest image"
+                                class="gridImage bg_img">
+                        </div>
+                        <div class="col-lg-6 col-md-12 d-flex flex-column justify-content-between">
+                            <div class="row">
+                                <div class="col-6 flexDiv">
+                                    <img src="/assets/bestTours/alpspackage.jpg" alt="Nice Forest image"
+                                        class="gridImage sm_img">
+                                </div>
+                                <div class="col-6 flexDiv">
+                                    <img src="/assets/bestTours/alpspackage.jpg" alt="Nice Forest image"
+                                        class="gridImage sm_img">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6 flexDiv">
+                                    <img src="/assets/bestTours/alpspackage.jpg" alt="Nice Forest image"
+                                        class="gridImage sm_img">
+                                </div>
+                                <div class="col-6 flexDiv">
+                                    <img src="/assets/bestTours/alpspackage.jpg" alt="Nice Forest image"
+                                        class="gridImage sm_img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-100 my-5">
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam incidunt, aperiam soluta
+                            asperiores dolorum sapiente sunt minima deleniti, velit animi officiis? Delectus ratione
+                            odit quae hic accusamus numquam ipsum dolores!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, earum dolor.
+                            Consequuntur, explicabo perspiciatis doloribus, optio esse delectus quos ab tempore alias
+                            necessitatibus praesentium autem illum mollitia. Reiciendis, ab! Quam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rerum dicta repudiandae
+                            iste eaque, quas quibusdam alias vel saepe pariatur iusto, delectus obcaecati beatae? Est
+                            dolorum aspernatur eligendi cumque fugit.
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam incidunt, aperiam soluta
+                            asperiores dolorum sapiente sunt minima deleniti, velit animi officiis? Delectus ratione
+                            odit quae hic accusamus numquam ipsum dolores!
+                        </p>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam incidunt, aperiam soluta
+                            asperiores dolorum sapiente sunt minima deleniti, velit animi officiis? Delectus ratione
+                            odit quae hic accusamus numquam ipsum dolores!
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores, earum dolor.
+                            Consequuntur, explicabo perspiciatis doloribus, optio esse delectus quos ab tempore alias
+                            necessitatibus praesentium autem illum mollitia. Reiciendis, ab! Quam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus rerum dicta repudiandae
+                            iste eaque, quas quibusdam alias vel saepe pariatur iusto, delectus obcaecati beatae? Est
+                            dolorum aspernatur eligendi cumque fugit.
+                        </p>
+                    </div>
+                </div>
+                <!-- End Image Grid -->
+
+                <div class="col-lg-4 col-md-12">
+                    <div class="flexDiv flex-column blogger">
+                        <div class="row w-100">
+                            <div class="col-lg-4">
+                                <div class="avatar"></div>
+                            </div>
+                            <div class="col-lg-8 d-flex flex-column justify-content-center">
+                                <h3 class="text-primary mb-0">Amir Blogger</h3>
+                                <small class="text-muted"><i class="fa fa-location-dot mr-2"></i>Tayibe,
+                                    Palestine</small>
+                                <div class="flexDiv justify-content-between">
+                                    <span class="mr-1">+102 Trip</span>
+                                    <span><i class="fa fa-star mr-2" style="color:#f6cb14"></i><span>4.72/</span><small
+                                            class="text-muted">60
+                                            reviews</small></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="w-100 my-3 px-4">
+                            <span class="text-muted">Include:</span>
+                            <p>Lorem ipsum - Lorem ipsum - Lorem ipsum - Lorem ipsum - Lorem ipsum - Lorem ipsum - Lorem
+                                ipsum - Lorem ipsum - Lorem ipsum - Lorem ipsum</p>
+                        </div>
+                        <div class="w-100 my-3 px-4">
+                            <span class="text-muted">Trip start with:</span>
+                            <div class="row justify-content-between align-items-center">
+                                <h3>$580</h3>
+                                <small class="text-muted">
+                                    Was $999
+                                </small>
+                            </div>
+                        </div>
+                        <div class="w-100 my-1 px-4">
+                            <div class="flexDiv callNow">
+                                <span>Call Now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <%- include("partials/footer")%>
+    </footer>
+    <%- include("partials/scripts")%>
+</body>
+
+</html>
+
+
+
+
+
+<!-- <script type="text/javascript">
+        var text = document.getElementById('findtext')
+        var shadow = '';
+        for (var i = 0; i < 10; i++)
+        {
+          shadow +=(shadow? ',':'')+ -i*1+'px '+ i*1+ 'px 0 #d9d9d9';
+        }
+        text.style.textShadow = shadow;
+      </script> -->
