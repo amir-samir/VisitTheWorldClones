@@ -1,14 +1,38 @@
 {
   "name": "fronend",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "optimize-css1": "postcss public/css/style.css --use autoprefixer cssnano postcss-pxtorem --output public/dist/style.css",
+    "optimize-css2": "postcss public/css/responsive.css --use autoprefixer cssnano postcss-pxtorem --output public/dist/responsive.css",
+    "optimize-css3": "postcss public/css/registration.css --use autoprefixer cssnano postcss-pxtorem --output public/dist/registration.css",
+    "optimize-css4": "postcss public/css/planner.css --use autoprefixer cssnano postcss-pxtorem --output public/dist/planner.css",
+    "optimize-css5": "postcss public/css/navbar.css --use autoprefixer cssnano postcss-pxtorem --output public/dist/navbar.css",
+    "transpile-js1" : "babel public/js/main.js -o public/dist/main.js --presets=@babel/preset-env",
+    "transpile-js2" : "babel public/js/global.js -o public/dist/global.js --presets=@babel/preset-env",
+    "transpile-js3" : "babel public/js/planner.js -o public/dist/planner.js --presets=@babel/preset-env",
+    "minify-js1" : "uglifyjs public/dist/main.js --compress -o public/dist/main.js",
+    "minify-js2" : "uglifyjs public/dist/global.js --compress -o public/dist/global.js",
+    "minify-js3" : "uglifyjs public/dist/planner.js --compress -o public/dist/planner.js",
+    "build" : "npm run optimize-css1 && npm run optimize-css2 && npm run optimize-css3 && npm run optimize-css4 && npm run optimize-css5 && npm run transpile-js1 && npm run transpile-js2 && npm run transpile-js3 && npm run minify-js1 && npm run minify-js2 && npm run minify-js3"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.0",
+    "html-minifier-terser": "^7.2.0",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "postcss-pxtorem": "^6.0.0",
+    "uglify-js": "^3.17.4"
+  }
 }
