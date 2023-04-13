@@ -2,7 +2,7 @@
   "name": "travelworld",
   "version": "1.0.0",
   "description": "travelApp",
-  "main": "server.js",
+  "main": "main.js",
   "proxy": "https://visittheworld.onrender.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -35,6 +35,8 @@
   },
   "devDependencies": {
     "browserify": "^17.0.0",
+    "gulp": "^4.0.2",
+    "webpack": "^5.79.0",
     "webpack-cli": "^5.0.1"
   }
 }
