@@ -68,7 +68,7 @@ const activitiesData = [];
 // defining an array to save selected activities
 const selectedActivities = [];
 // fetching the activities collection from mongodb
-fetch("https://localhost:5500/activitydata")
+fetch("https://visittheworld.onrender.com/activitydata")
   .then((response) => {
     return response.json();
   })
@@ -543,7 +543,7 @@ async function checkAddingActivity(day, id) {
         start: freeSlotStartTime,
         end: freeSlotEndTime,
       });
-      await fetch("https://localhost:5500/addActivity", {
+      await fetch("https://visittheworld.onrender.com/addActivity", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -808,7 +808,7 @@ async function deleteActivity(day, id) {
   var newArray = [];
   addDistances(selectedArray, newArray, day);
 
-  await fetch("https://localhost:5500/deleteActivity", {
+  await fetch("https://visittheworld.onrender.com/deleteActivity", {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
