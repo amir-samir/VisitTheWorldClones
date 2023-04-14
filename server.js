@@ -88,6 +88,8 @@ const event = {
 //    }
 // )
 
+//Port
+const port = process.env.PORT || 5500;
 //Selected Model
 const SelectedActivities = require("./models/SelectedActivities");
 
@@ -133,8 +135,11 @@ mongoose
 //use routes
 app.use("/", authRoute);
 
-
-  
+const server = https
+  .createServer(options, app, (req, res) => {
+    res.end("SSL ADDED");
+  })
+  .listen(port, () => console.log("Server is Running"));
 //Start the server
 // server.listen(process.env.PORT, () => console.log("Server is Running"));
 
@@ -189,17 +194,11 @@ app.get("/", (req, res) => {
         "Lorem ipsum dolor sit demoise amet consectetur, Ducimusele, repudiandae temporibus omnis illum maxime quod deserunt eligendi dolor",
     },
   ];
+  res.render("main", {
+    content: "Screens/index",
+    tours: bestTours,
+  });
 });
-
-const server = https
-  .createServer(options, app, (req, res) => {
-    res.render("main", {
-      content: "Screens/index",
-      tours: bestTours,
-    });
-  })
-  .listen(process.env.PORT, () => console.log("Server is Running"));
-
 
 app.get("/register", (req, res) => {
   res.render("main", {

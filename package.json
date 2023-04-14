@@ -6,23 +6,7 @@
   "proxy": "https://visittheworld.onrender.com",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js",
-    "minify-html1": "html-minifier-terser views/Screens/planner.html --collapse-whitespace --output=public/dist/planner.html",
-    "minify-html2": "html-minifier-terser views/Screens/login.html --collapse-whitespace --output=public/dist/login.html",
-    "minify-html3": "html-minifier-terser views/Screens/registration.html --collapse-whitespace --output=public/dist/registration.html",
-    "optimize-css1": "postcss public/css/style.css --use autoprefixer cssnano postcss-pxtorem --output public/dist/style.css",
-    "optimize-css2": "postcss public/css/responsive.css --use autoprefixer cssnano postcss-pxtorem --output public/dist/responsive.css",
-    "optimize-css3": "postcss public/css/registration.css --use autoprefixer cssnano postcss-pxtorem --output public/dist/registration.css",
-    "optimize-css4": "postcss public/css/planner.css --use autoprefixer cssnano postcss-pxtorem --output public/dist/planner.css",
-    "optimize-css5": "postcss public/css/navbar.css --use autoprefixer cssnano postcss-pxtorem --output public/dist/navbar.css",
-    "transpile-js1" : "babel public/js/main.js -o public/dist/main.js --presets=@babel/preset-env",
-    "transpile-js2" : "babel public/js/global.js -o public/dist/global.js --presets=@babel/preset-env",
-    "transpile-js3" : "babel public/js/planner.js -o public/dist/planner.js --presets=@babel/preset-env",
-    "minify-js1" : "uglifyjs public/dist/main.js --compress -o public/dist/main.js",
-    "minify-js2" : "uglifyjs public/dist/global.js --compress -o public/dist/global.js",
-    "minify-js3" : "uglifyjs public/dist/planner.js --compress -o public/dist/planner.js",
-    "build" : "npm run optimize-css1 && npm run optimize-css2 && npm run optimize-css3 && npm run optimize-css4 && npm run optimize-css5 && npm run transpile-js1 && npm run transpile-js2 && npm run transpile-js3 && npm run minify-js1 && npm run minify-js2 && npm run minify-js3"
-    
+    "start": "nodemon server.js"
   },
   "author": "amir azim",
   "license": "ISC",
@@ -37,6 +21,7 @@
     "express-session": "^1.17.3",
     "fs": "^0.0.1-security",
     "googleapis": "^111.0.0",
+    "heroku": "^8.0.4",
     "https": "^1.0.0",
     "mongodb": "^5.0.1",
     "mongoose": "^6.9.0",
